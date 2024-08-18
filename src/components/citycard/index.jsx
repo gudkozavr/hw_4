@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 function CityCard({ currentCity }) {
   return (
-    <div>
+    <div className={styles.city_container}>
       <h1>{currentCity.name} </h1>
       <img src={currentCity.imageUrl} alt="" />
       <p>{currentCity.description}</p>
